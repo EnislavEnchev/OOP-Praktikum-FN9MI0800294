@@ -31,7 +31,7 @@ SimpleVector& SimpleVector::operator/(const int& other) {
 }
 void SimpleVector::readText(std::ifstream& stream) {
 	for (int i = 0; i < 10; i++) {
-		std::getline(stream, data[i]);
+		stream >> data[i];
 	}
 	stream >> size;
 	stream.ignore();
