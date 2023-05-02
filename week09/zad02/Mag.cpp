@@ -19,6 +19,10 @@ Mag& Mag::operator=(const Mag& other) {
 	return *this;
 }
 
+Mag::Mag(const Mag& other) :Item(other){
+	issueNumber = other.issueNumber;
+}
+
 void Mag::print() {
 	Item::print();
 	std::cout << issueNumber << std::endl;

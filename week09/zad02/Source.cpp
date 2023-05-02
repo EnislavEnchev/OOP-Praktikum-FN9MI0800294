@@ -5,11 +5,11 @@
 #include"Mag.h"
 
 int main() {
-	Book some;
+	Item some;
 	Dictionary<size_t, Item> items;
 	Dictionary<size_t, Book> books;
 	Dictionary<size_t, Mag> mags;
-	books.add(1, some);
-	//books[1].print();
+	items.add(1, some);
+	items[1].print();
 	
 }

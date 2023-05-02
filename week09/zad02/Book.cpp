@@ -21,6 +21,10 @@ Book& Book::operator=(const Book& other) {
 	}
 	return *this;
 }
+Book::Book(const Book& other) :Item(other){
+	genre = new char[strlen(other.genre) + 1];
+	strcpy_s(genre, strlen(other.genre) + 1, other.genre);
+}
 
 void Book::print() {
 	Item::print();

@@ -7,6 +7,7 @@ private:
 	char* genre;
 public:
 	Book();
+	Book(const Book& other);
 	Book& operator=(const Book& other);
 	~Book();
 	void print();

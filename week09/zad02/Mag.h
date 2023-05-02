@@ -8,6 +8,7 @@ private:
 public:
 	Mag();
 	~Mag();
+	Mag(const Mag& other);
 	void print();
 	Mag& operator=(const Mag& other);
 };

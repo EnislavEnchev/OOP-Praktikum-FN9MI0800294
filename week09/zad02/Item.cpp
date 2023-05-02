@@ -18,6 +18,14 @@ Item::~Item() {
 	delete[] publicationDate;
 	//id = 0;
 }
+Item::Item(const Item& other) {
+	title = new char[strlen(other.title) + 1];
+	strcpy_s(title, strlen(other.title) + 1, other.title);
+	author = new char[strlen(other.author) + 1];
+	strcpy_s(author, strlen(other.author) + 1, other.author);
+	publicationDate = new char[strlen(other.publicationDate) + 1];
+	strcpy_s(publicationDate, strlen(other.publicationDate) + 1, other.publicationDate);
+}
 
 Item& Item::operator=(const Item& other) {
 	if (!(this == &other)) {

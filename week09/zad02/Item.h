@@ -9,6 +9,7 @@ public:
 	char* publicationDate;
 	Item();
 	~Item();
+	Item(const Item& other);
 	Item& operator=(const Item& other);
 	void print();
 };
