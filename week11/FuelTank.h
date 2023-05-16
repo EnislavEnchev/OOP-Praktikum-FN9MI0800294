@@ -6,8 +6,14 @@
 template <typename T>
 class FuelTank : public CarPart {
 public:
-	void display() const override;
-	FuelTank();
+	void display() const override {
+		baseDisplay();
+		std::cout << fuel << ' ' << capacity << std::endl;
+	}
+	FuelTank<T>() {
+		fuel = "gasolina";
+		capacity = 40;
+	}
 private:
 	unsigned capacity;
 	T fuel;
