@@ -47,19 +47,7 @@ void Car::addPart(CarPart* part) {
 	parts[count] = part;
 	count++;
 }
-void Car::addPart(const CarPart& part) {
-	if (count == cap) {
-		cap *= 2;
-		CarPart** newParts = new CarPart * [cap];
-		for (size_t i = 0; i < count; i++) {
-			newParts[i] = parts[i];
-		}
-		delete[] parts;
-		parts = newParts;
-	}
-	parts[count] = part;
-	count++;
-}
+
 
 void Car::displayCarParts() {
 	for (size_t i = 0; i < count; i++) {
