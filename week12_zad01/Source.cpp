@@ -5,7 +5,11 @@
 #include"Zoo.h"
 #include<iostream>
 int main() {
-	Mammal m("ab", "Meat", "ad", 40, "ae");
+	Bird b("be", "Plants", "bd", 40, "br");
+}
+
+/*
+Mammal m("ab", "Meat", "ad", 40, "ae");
 	Mammal m2("be", "Plants", "bd", 40, "br");
 	ZooSector z;
 	std::cout << m.eat();
@@ -18,4 +22,4 @@ int main() {
 	zoo.addInventory(&m);
 	zoo.addInventory(&m2);
 	std::cout << zoo.canFeed();
-}
+*/

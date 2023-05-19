@@ -147,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animal.cpp" />
+    <ClCompile Include="Bird.cpp" />
     <ClCompile Include="Mammal.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Zoo.cpp" />

@@ -1,2 +1,9 @@
-﻿  Source.cpp
+﻿  Bird.cpp
+  Source.cpp
+  Zoo.cpp
+C:\Users\grade\source\repos\week12_zad01\Zoo.cpp(70,32): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+C:\Users\grade\source\repos\week12_zad01\Zoo.cpp(73,32): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+  ZooSector.cpp
+C:\Users\grade\source\repos\week12_zad01\ZooSector.cpp(18,23): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   week12_zad01.vcxproj -> C:\Users\grade\source\repos\week12_zad01\Debug\week12_zad01.exe
